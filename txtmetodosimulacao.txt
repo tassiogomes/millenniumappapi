@@ -1,0 +1,33 @@
+http://127.0.0.1:8000/api/users/8/simulacoes
+
+{
+  "montante_pedido": 10000,
+  "prestacao_mensal": 500,
+  "taxa_de_juros": 0.05,
+  "meses_de_pagamento": 24,
+  "montante_total_a_pagar": 12000,
+  "data_simulacao": "2023-06-27"
+}
+
+
+    public function createSimulacao(Request $request, $id)
+{
+    $request->validate([
+        //'user_id' => 'required',
+        'montante_pedido' => 'required',
+        'prestacao_mensal' => 'required',
+        'taxa_de_juros' => 'required',
+        'meses_de_pagamento' => 'required',
+        'montante_total_a_pagar' => 'required',
+        'data_simulacao' => 'required',
+    ]);
+
+    // Verifica se o usuário existe
+    //$user = User::find(Auth::id());
+    //$user = DB::table('users')->find($request->input('users_id'));
+    $user = User::find($id);
+
+    //dd($user);
+    if (!$user) {
+        return response()->json(['message' => 'Usuário não encontrado'], 404);
+    }

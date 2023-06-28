@@ -1,0 +1,114 @@
+App\Models\User Object
+(
+    [connection:protected] => mysql
+    [table:protected] => users
+    [primaryKey:protected] => id
+    [keyType:protected] => int
+    [incrementing] => 1
+    [with:protected] => Array
+        (
+        )
+
+    [withCount:protected] => Array
+        (
+        )
+
+    [preventsLazyLoading] => 
+    [perPage:protected] => 15
+    [exists] => 1
+    [wasRecentlyCreated] => 
+    [escapeWhenCastingToString:protected] => 
+    [attributes:protected] => Array
+        (
+            [id] => 26
+            [name] => user16
+            [email] => user16@gmail.com
+            [email_verified_at] => 
+            [password] => 123
+            [id_tipo_user] => 3
+            [isBiometric] => 
+            [remember_token] => 
+            [created_at] => 
+            [updated_at] => 
+        )
+
+    [original:protected] => Array
+        (
+            [id] => 26
+            [name] => user16
+            [email] => user16@gmail.com
+            [email_verified_at] => 
+            [password] => 123
+            [id_tipo_user] => 3
+            [isBiometric] => 
+            [remember_token] => 
+            [created_at] => 
+            [updated_at] => 
+        )
+
+    [changes:protected] => Array
+        (
+        )
+
+    [casts:protected] => Array
+        (
+            [email_verified_at] => datetime
+            [password] => hashed
+        )
+
+    [classCastCache:protected] => Array
+        (
+        )
+
+    [attributeCastCache:protected] => Array
+        (
+        )
+
+    [dateFormat:protected] => 
+    [appends:protected] => Array
+        (
+        )
+
+    [dispatchesEvents:protected] => Array
+        (
+        )
+
+    [observables:protected] => Array
+        (
+        )
+
+    [relations:protected] => Array
+        (
+        )
+
+    [touches:protected] => Array
+        (
+        )
+
+    [timestamps] => 1
+    [usesUniqueIds] => 
+    [hidden:protected] => Array
+        (
+            [0] => password
+            [1] => remember_token
+        )
+
+    [visible:protected] => Array
+        (
+        )
+
+    [fillable:protected] => Array
+        (
+            [0] => name
+            [1] => email
+            [2] => password
+        )
+
+    [guarded:protected] => Array
+        (
+            [0] => *
+        )
+
+    [rememberTokenName:protected] => remember_token
+    [accessToken:protected] => 
+)
